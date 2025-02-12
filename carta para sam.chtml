@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín ❤️</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6ea;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 32px;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            display: inline-block;
+            transform: rotate(-45deg);
+            margin-top: 20px;
+        }
+
+        .heart::before, .heart::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 50px;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #d63384;
+            display: none;
+        }
+
+        .button {
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💗 ¿quieres ser mi san Valentín?💗</h1>
+
+    <div class="heart"></div>
+
+    <button class="button" onclick="showMessage()">💌 Ver mensaje</button>
+
+    <p class="message" id="message">por primera vez me emociona mucho ese día y no hay nadie mejor para compartirlo que contigo mi princesita de ojitos de perro atropellado, eres mi persona favorita en este mundo y espero que sea el primero de muchos tu y yo juntos, te quiero como no te imaginas y espero que digas que si 
+    
+    
+    <br>De Logan para su loba🌹.</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
